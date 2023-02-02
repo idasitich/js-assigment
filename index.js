@@ -11,7 +11,7 @@ const computerPlay = () => {
 };
 
 const userPlay = () => {
-    let word = prompt("Enter your choice and prepare to die >:D")
+    let word = prompt("Enter your choice and prepare to die :D")
     console.log('word', word);
     let cleanWord = word.trim().toLowerCase();
     console.log('clinword', cleanWord);
