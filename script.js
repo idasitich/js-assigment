@@ -4,7 +4,7 @@ const computerPlay = () => {
     return word;
 };
 
-const wordCapitalized = (str) => {
+const wordCapitalizer = (str) => {
     const strConverted = str.trim().toLowerCase();
     const firstLetter = strConverted.charAt(0).toUpperCase();
     const remainingLetters = strConverted.substring(1,);
@@ -14,10 +14,10 @@ const wordCapitalized = (str) => {
 
 const userPlay = () => {
     let rawWord = prompt("Enter your choice and prepare to die :D");
-    let word = wordCapitalized(rawWord); 
+    let word = wordCapitalizer(rawWord); 
     while(word != 'Rock' && word != 'Scissors' &&  word != 'Paper'){
         let newWord = prompt("Don't mess with me (enter only Rock, Paper or Scissors)");
-        word = wordCapitalized(newWord);
+        word = wordCapitalizer(newWord);
     }
     return word;
 };
@@ -90,7 +90,7 @@ const game = () => {
         Final Score: 
         Computer : ${computerCounter} | Player : ${userCounter}
     
-        YOU WIN ! CONGRATULATION.`
+        YOU WIN ! CONGRATULATIONS.`
         )
     }else{
         window.alert("You both are a tie, Play again ! FIGHTING !!!")
