@@ -5,9 +5,9 @@ const computerPlay = () => {
 };
 
 const wordCapitalized = (str) => {
-    str.trim().toLowerCase();
-    const firstLetter = str.charAt(0).toUpperCase();
-    const remainingLetters = str.substring(1,);
+    const strConverted = str.trim().toLowerCase();
+    const firstLetter = strConverted.charAt(0).toUpperCase();
+    const remainingLetters = strConverted.substring(1,);
     const capitalizedWord = firstLetter + remainingLetters;
     return capitalizedWord;
 };
