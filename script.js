@@ -88,7 +88,7 @@ const game = () => {
     } else if (computerCounter < userCounter){
         window.alert(`
         Final Score: 
-        Computer : ${computerCounter} | layer : ${userCounter}
+        Computer : ${computerCounter} | Player : ${userCounter}
     
         YOU WIN ! CONGRATULATION.`
         )
