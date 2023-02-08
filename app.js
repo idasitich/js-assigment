@@ -7,10 +7,6 @@ document.getElementById('start_button').addEventListener("click", () =>{
     document.querySelector('.to_play_show').className='hide';
  });
 
-// const putParragraph = () => {
-//     document.createElement(<p></p>);
-// }
-
 document.querySelectorAll('.play_button').forEach(button => {
     button.addEventListener('click', () => {
         const userPlay = button.value;
