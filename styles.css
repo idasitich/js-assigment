@@ -1,0 +1,115 @@
+@font-face {
+    font-family: digital;
+    src: url('digital-7.regular.ttf');
+}
+
+body {
+    color:chartreuse;
+    background-image: url('./5777371.jpeg');
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    flex-grow: 80;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    margin: 0;
+}
+
+.scores span {
+    font-family: digital;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scores_playing {
+    visibility: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+section > div {
+    background-color: rgb(2, 0, 4);
+    color:chartreuse;
+    margin: 6% 1%;
+    height: 200px;
+    width: 130px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(128, 255, 0, 0.471);
+}
+
+button  {
+    background-color: rgb(18, 0, 45);
+    color:chartreuse;
+    height: 50px;
+    width: 150px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: chartreuse;
+    font-size: large;
+}
+
+button:active {
+    background-color: rgb(0, 0, 0);
+    transform: scale(0.98);
+}
+
+header, footer {
+    flex-grow: 10;
+    padding: 1%;
+}
+
+.to_play_hidden, .hide {
+    display: none;
+}
+
+.to_play_show {
+    display: block;
+}
+
+.to_play_show button{
+    margin: 2%;
+    display: inline-block;
+}
+
+.to_play_show h1{
+    width: 90vw;
+}
+
+.tie {
+    color: rgba(128, 255, 0, 0.365) !important;
+}
+
+.lost {
+    color: rgb(255, 55, 0) !important;
+}
+
