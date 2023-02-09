@@ -47,7 +47,14 @@ document.querySelectorAll('.play_button').forEach(button => {
                     numberOfRounds = 5;
                 };
             }
-            if(numberOfRounds == 5) {finalMessage(userCounter, computerCounter);};    
+            if(numberOfRounds == 5) {
+                let message = (computerCounter < userCounter)? '🎉🎉🎉 The winner are You, CONGRATULATIONS 🎉🎉🎉!!!!':
+                    (userCounter < computerCounter)? '💀 The winner is me, as usual, HOHOHO ☠️🧨': 
+                    `There's no winner, or maybe we both won 🫶🏽`;
+                document.getElementById('result').textContent = `${message}`;
+                finalMessage(userCounter, computerCounter);
+               
+            };    
         }
         
         console.log(userPlay);
