@@ -117,4 +117,3 @@ const game = () => {
     doGame(userCounter, computerCounter);
 };
 
-// game();

@@ -50,7 +50,7 @@ document.querySelectorAll('.play_button').forEach(button => {
             if(numberOfRounds == 5) {
                 let message = (computerCounter < userCounter)? '🎉🎉🎉 The winner are You, CONGRATULATIONS 🎉🎉🎉!!!!':
                     (userCounter < computerCounter)? '💀 The winner is me, as usual, HOHOHO ☠️🧨': 
-                    `There's no winner, or maybe we both won 🫶🏽`;
+                    `There's no winner, or maybe we both won 💀  `;
                 document.getElementById('result').textContent = `${message}`;
                 finalMessage(userCounter, computerCounter);
                
