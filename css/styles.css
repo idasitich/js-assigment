@@ -1,11 +1,11 @@
 @font-face {
     font-family: digital;
-    src: url('digital-7.regular.ttf');
+    src: url('../fonts/digital-7.regular.ttf');
 }
 
 body {
     color:chartreuse;
-    background-image: url('./5777371.jpeg');
+    background-image: url('../images/5777371.jpeg');
     font-family: 'Teko', sans-serif;
     display: flex;
     flex-direction: column;
