@@ -61,5 +61,5 @@ document.querySelectorAll('.play_button').forEach(button => {
 document.getElementById('finish_button').addEventListener("click", () =>{ 
     document.querySelector('.to_play_show').className= 'to_play_hidden';
     document.querySelector('.hide').className='to_play_show';
-    location.reload();
+    window.location.reload();
  });
