@@ -53,10 +53,15 @@ document.querySelectorAll('.play_button').forEach(button => {
                     `There's no winner, or maybe we both won 💀  `;
                 document.getElementById('result').textContent = `${message}`;
                 finalMessage(userCounter, computerCounter);
-               
             };    
         }
         
         console.log(userPlay);
     });
 });
+document.getElementById('finish_button').addEventListener("click", () =>{ 
+    document.querySelector('.to_play_show').className= 'to_play_hidden';
+    document.querySelector('.hide').className='to_play_show';
+    location.reload();
+
+ });
