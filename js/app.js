@@ -58,6 +58,7 @@ document.querySelectorAll('.play_button').forEach(button => {
         console.log(userPlay);
     });
 });
+
 document.getElementById('finish_button').addEventListener("click", () =>{ 
     document.querySelector('.to_play_show').className= 'to_play_hidden';
     document.querySelector('.hide').className='to_play_show';

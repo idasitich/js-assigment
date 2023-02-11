@@ -7,22 +7,23 @@ const computerPlay = () => {
     return word;
 };
 
-const wordCapitalizer = (str) => {
-    str.trim().toLowerCase();
-    const firstLetter = str.charAt(0).toUpperCase();
-    const remainingLetters = str.substring(1,);
-    return firstLetter + remainingLetters;
-};
+//WE HAVE COMMENTED ALL THOSE FUNCTIONS WE NEEDED FOR THE FIRST VERSION AND WE LET ASIDE USING UX
+// const wordCapitalizer = (str) => {
+//     str.trim().toLowerCase();
+//     const firstLetter = str.charAt(0).toUpperCase();
+//     const remainingLetters = str.substring(1,);
+//     return firstLetter + remainingLetters;
+// };
 
-const userPlay = () => {
-    let rawWord = prompt("Enter your choice and prepare to die >:D");
-    let word = wordCapitalizer(rawWord); 
-    while(word != 'Rock' && word != 'Scissors' &&  word != 'Paper'){
-        let newWord = prompt("Don't mess with me (enter only Rock, Paper or Scissors)");
-        word = wordCapitalizer(newWord);
-    }
-    return word;
-};
+// const userPlay = () => {
+//     let rawWord = prompt("Enter your choice and prepare to die >:D");
+//     let word = wordCapitalizer(rawWord); 
+//     while(word != 'Rock' && word != 'Scissors' &&  word != 'Paper'){
+//         let newWord = prompt("Don't mess with me (enter only Rock, Paper or Scissors)");
+//         word = wordCapitalizer(newWord);
+//     }
+//     return word;
+// };
 
 const playRound = (playerSelection, computerSelection) => {
     let result = 'Skynet wins, looser !!!';
@@ -86,34 +87,37 @@ const winnerInAdvance = () => {
     return message? true: false;
 };
 
-const doGame = (userCounter, computerCounter) => { 
-    let stop = false;
-    for(let i=0; i<5; i++){
-        let computer = computerPlay();
-        let user = userPlay();
-        let roundResult = playRound(user, computer);
-        userCounter += roundResult.userCounter;
-        computerCounter+= roundResult.computerCounter;
-        alert(`
-        Player game: ${user}, 
-        Computer game: ${computer} 
-        ${roundResult.result} 
-        Player points: ${userCounter} | Computer points: ${computerCounter}`)
-        if((userCounter == 3 || computerCounter == 3) && i < 4){
-            stop = winnerInAdvance();
-        }
-        if(stop) {
-            finalMessage(userCounter, computerCounter);
-            break;
-        };
-    }
-    if(!stop){finalMessage(userCounter, computerCounter);};
-};
+//WE HAVE COMMENTED ALL THOSE FUNCTIONS WE NEEDED FOR THE FIRST VERSION AND WE LET ASIDE USING UX
+// const doGame = (userCounter, computerCounter) => { 
+//     let stop = false;
+//     for(let i=0; i<5; i++){
+//         let computer = computerPlay();
+//         let user = userPlay();
+//         let roundResult = playRound(user, computer);
+//         userCounter += roundResult.userCounter;
+//         computerCounter+= roundResult.computerCounter;
+//         alert(`
+//         Player game: ${user}, 
+//         Computer game: ${computer} 
+//         ${roundResult.result} 
+//         Player points: ${userCounter} | Computer points: ${computerCounter}`)
+//         if((userCounter == 3 || computerCounter == 3) && i < 4){
+//             stop = winnerInAdvance();
+//         }
+//         if(stop) {
+//             finalMessage(userCounter, computerCounter);
+//             break;
+//         };
+//     }
+//     if(!stop){finalMessage(userCounter, computerCounter);};
+// };
 
-const game = () => {
-    alert("🔫🤖Welcome to my rock-paper-scissors game. We have 5 rounds to set myself up as the absolute victor 🤖🔫")
-    let computerCounter = 0;
-    let userCounter = 0;
-    doGame(userCounter, computerCounter);
-};
+// const game = () => {
+//     alert("🔫🤖Welcome to my rock-paper-scissors game. We have 5 rounds to set myself up as the absolute victor 🤖🔫")
+//     let computerCounter = 0;
+//     let userCounter = 0;
+//     doGame(userCounter, computerCounter);
+// };
+
+//game();
 
