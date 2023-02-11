@@ -1,3 +1,3 @@
 # js-assigment
 
-https://github.com/idasitich/js-assigment.git
+https://idasitich.github.io/js-assigment/
